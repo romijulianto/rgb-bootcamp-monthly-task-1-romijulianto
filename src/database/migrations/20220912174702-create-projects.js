@@ -11,22 +11,10 @@ module.exports = {
             },
             id_user: {
                 allowNull: false,
-                references: {
-                    model: {
-                        tableName: 'users'
-                    },
-                    key: 'id'
-                },
                 type: Sequelize.STRING
             },
             id_category: {
                 allowNull: false,
-                references: {
-                    model: {
-                        tableName: 'projectCategories'
-                    },
-                    key: 'id'
-                },
                 type: Sequelize.STRING,
             },
             author: {
