@@ -4,12 +4,8 @@ module.exports = {
         await queryInterface.createTable('status', {
             id: {
                 allowNull: false,
-                autoIncrement: true,
                 primaryKey: true,
-                type: Sequelize.INTEGER
-            },
-            id: {
-                type: Sequelize.UUID
+                type: Sequelize.STRING
             },
             title: {
                 type: Sequelize.STRING

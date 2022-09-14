@@ -18,7 +18,6 @@ module.exports = (sequelize, DataTypes) => {
         }
     }
     status.init({
-        id: DataTypes.UUID,
         title: DataTypes.STRING,
         body: DataTypes.STRING,
         id_user: DataTypes.STRING
