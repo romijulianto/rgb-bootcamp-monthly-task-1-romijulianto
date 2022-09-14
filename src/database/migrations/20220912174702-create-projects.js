@@ -20,6 +20,12 @@ module.exports = {
             author: {
                 type: Sequelize.STRING
             },
+            image: {
+                type: Sequelize.STRING
+            },
+            publishedAt: {
+                type: Sequelize.DATE
+            },
             summary: {
                 type: Sequelize.STRING
             },
