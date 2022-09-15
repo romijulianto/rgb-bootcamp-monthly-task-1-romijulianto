@@ -1,8 +1,6 @@
 const { users } = require('../../../database/models');
 const bcrypt = require("../../../utils/bcrypt");
 const jwt = require('jsonwebtoken');
-const role = require('/src/config/roles.js')
-const ROLEs = role.ROLEs;
 
 const AuthService = {
     /* method login check email/password */
@@ -27,9 +25,9 @@ const AuthService = {
 
         const token = jwt.sign({
             id: user.id,
-            username: user.username,
+            name: user.username,
             email: user.email,
-        }, 'secret');
+        }, 'romijulianto');
 
         return res.status(200).json({ data: { user, token } });
     }

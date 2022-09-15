@@ -1,4 +1,4 @@
-const { Project } = require('../../../database/models').project;
+const { Project } = require('../../../database/models').projects;
 
 const ProjectService = {
     /* service to find all project */
