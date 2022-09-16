@@ -3,7 +3,7 @@ const route = require('./src/routes/index.js');
 const bodyParser = require('body-parser');
 
 const app = express();
-const port = 8081;
+const port = 5000;
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);

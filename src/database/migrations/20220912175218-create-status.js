@@ -13,10 +13,6 @@ module.exports = {
             body: {
                 type: Sequelize.STRING
             },
-            id_user: {
-                allowNull: false,
-                type: Sequelize.STRING
-            },
             createdAt: {
                 allowNull: false,
                 type: Sequelize.DATE

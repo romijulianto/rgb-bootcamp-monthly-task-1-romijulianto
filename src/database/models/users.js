@@ -19,10 +19,6 @@ module.exports = (sequelize, DataTypes) => {
                 as: 'project',
                 foreignKey: 'id'
             });
-            this.hasMany(models.status, {
-                as: 'status',
-                foreignKey: 'id'
-            });
         }
     }
     users.init({
